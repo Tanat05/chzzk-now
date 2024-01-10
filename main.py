@@ -2,9 +2,7 @@ import httpx
 import tkinter
 from tkinter import *
 
-#pyinstaller main.py -n 치지직 --specpath spec --onefile --icon 74_20230224022842_1.ico --exclude request,numpy,pandas
-
-channel_id = '8a13b48bf962d6266f646e584a4ee466'
+channel_id = '8a13b48bf962d6266f646e584a4ee466' #스트리머 id
 naver_api_url = f'https://api.chzzk.naver.com/service/v2/channels/{channel_id}/live-detail'
 viewer = 0
 
@@ -68,7 +66,7 @@ def update():
     win.after(30000, update)
     
 win = Tk()
-win.title("타나리 status")
+win.title("치지직 status")
 win.geometry('1000x400')
 canvas = Canvas(win, width=1000, height=400)
 canvas.pack()

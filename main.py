@@ -2,7 +2,9 @@ import httpx
 import tkinter
 from tkinter import *
 
-channel_id = '8a13b48bf962d6266f646e584a4ee466' #스트리머 id
+#pyinstaller main.py -n 치지직 --onefile --icon 74_20230224022842_1.ico --exclude request,numpy,pandas
+
+channel_id = '8a13b48bf962d6266f646e584a4ee466'
 naver_api_url = f'https://api.chzzk.naver.com/service/v2/channels/{channel_id}/live-detail'
 viewer = 0
 
@@ -63,10 +65,10 @@ def update():
     else:
         print("오프라인")
 
-    win.after(30000, update)
+    win.after(60000, update)
     
 win = Tk()
-win.title("치지직 status")
+win.title("타나리 status")
 win.geometry('1000x400')
 canvas = Canvas(win, width=1000, height=400)
 canvas.pack()
@@ -76,6 +78,6 @@ canvas.create_line(500, 0, 500, 400)
 canvas.create_line(750, 0, 750, 400)
 canvas.create_line(250, 200, 250, 400)
 
-win.after(3000, update)
+win.after(1000, update)
 
 win.mainloop()

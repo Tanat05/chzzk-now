@@ -4,7 +4,7 @@ from tkinter import *
 
 #pyinstaller main.py -n 치지직 --onefile --icon 74_20230224022842_1.ico --exclude request,numpy,pandas
 
-channel_id = '8a13b48bf962d6266f646e584a4ee466'
+channel_id = '8a13b48bf962d6266f646e584a4ee466' #스트리머 ID
 naver_api_url = f'https://api.chzzk.naver.com/service/v2/channels/{channel_id}/live-detail'
 viewer = 0
 

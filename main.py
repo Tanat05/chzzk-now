@@ -68,7 +68,7 @@ def update():
     win.after(60000, update)
     
 win = Tk()
-win.title("타나리 status")
+win.title("status")
 win.geometry('1000x400')
 canvas = Canvas(win, width=1000, height=400)
 canvas.pack()
